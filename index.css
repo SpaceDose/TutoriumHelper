@@ -1,0 +1,27 @@
+html, body {
+    background-color: black;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+}
+
+iframe {
+    border: none;
+    height: 100%;
+}
+
+#package_explorer {
+    width: 350px;
+    background-color: #242424;
+}
+
+#editor {
+    background-color: #303030;
+}
+
+#chat {
+    width: 30%;
+    background-color: #242424;
+}
