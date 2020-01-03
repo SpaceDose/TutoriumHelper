@@ -4,11 +4,20 @@ html, body {
 }
 
 .wrapper {	
-	margin-top: 25%;
+	margin-top:20%;
 	background-color: #242424;
 }
 
+.form-input{
+	margin-bottom: 12px;
+}
+
+.form-button {
+	margin-top: 16px;
+}
+
 .form-signin {
+align:center;
   max-width: 380px;
   padding: 15px 35px 45px;
   margin: 0 auto;
@@ -30,11 +39,8 @@ html, body {
 			}
 	}
 	
-	.spacing {
-	  font-weight: normal;
-	}
-	
-	
+
+		
 	input[type="text"] {
 	  margin-bottom: -1px;
 	  border-bottom-left-radius: 0;
@@ -47,6 +53,4 @@ html, body {
 	  border-top-right-radius: 0;
 	}
 
-.btnlogin {
-	margin-top: 5px;
-}
+
