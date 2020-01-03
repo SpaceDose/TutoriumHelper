@@ -1,7 +1,33 @@
-html, body {
+body {
     background-color: #242424;
-}
+    margin-top: 16px;}
 
 div {
     color: white;
+}
+
+hr {
+    border-color: #707070;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+.btn-circle.btn-sm { 
+    width: 30px; 
+    height: 30px; 
+    padding-top: 2px;
+    border-radius: 50%; 
+    font-size: 8px; 
+} 
+.btn-circle.btn-sm:hover {
+    background-color: #505050;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
 }
