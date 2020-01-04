@@ -104,3 +104,16 @@ pre {
 #line-numbers {
     overflow : hidden;
 }
+
+.close {
+    float: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #303030;
+    text-shadow:none;
+    opacity: .5;
+}
+.close:hover {
+	color: white;
+}
