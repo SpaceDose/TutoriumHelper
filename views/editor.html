@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="../stylesheets/editor.css">
+<link rel="stylesheet" href="../plugin/prism.css">
 
 <div class="card">
     <div class="card-header">
@@ -31,75 +32,41 @@
             <p>11</p>
             <p>12</p>
         </div>
-        <div class="code">
-            <p>import java.lang.Math;</p>
-            <p></p>
-            <p>public class test{</p>
-            <p></p>
-            <p>&emsp;public static void main(String[] args){</p>
-    		<p>&emsp;&emsp;double[] test = new double[100000];</p>
-    		<p></p>
-    		<p>&emsp;&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;&emsp;test[i] = 	Math.sin( Math.toRadians( 130.81/200 * Math.PI * i));</p>
-    		<p>&emsp;&emsp;}</p>
-    		<p></p>
-    		<p>&emsp;&emsp;double[] test1 = new double[100000];</p>
-    		<p></p>
-            <p>&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;test1[i] = 	Math.sin(130.81 * 2 * Math.PI * i/44100);</p>
-            <p>&emsp;}</p>
-            <p>import java.lang.Math;</p>
-            <p></p>
-            <p>public class test{</p>
-            <p></p>
-            <p>&emsp;public static void main(String[] args){</p>
-    		<p>&emsp;&emsp;double[] test = new double[100000];</p>
-    		<p></p>
-    		<p>&emsp;&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;&emsp;test[i] = 	Math.sin( Math.toRadians( 130.81/200 * Math.PI * i));</p>
-    		<p>&emsp;&emsp;}</p>
-    		<p></p>
-    		<p>&emsp;&emsp;double[] test1 = new double[100000];</p>
-    		<p></p>
-            <p>&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;test1[i] = 	Math.sin(130.81 * 2 * Math.PI * i/44100);</p>
-            <p>&emsp;}</p>
-            <p>import java.lang.Math;</p>
-            <p></p>
-            <p>public class test{</p>
-            <p></p>
-            <p>&emsp;public static void main(String[] args){</p>
-    		<p>&emsp;&emsp;double[] test = new double[100000];</p>
-    		<p></p>
-    		<p>&emsp;&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;&emsp;test[i] = 	Math.sin( Math.toRadians( 130.81/200 * Math.PI * i));</p>
-    		<p>&emsp;&emsp;}</p>
-    		<p></p>
-    		<p>&emsp;&emsp;double[] test1 = new double[100000];</p>
-    		<p></p>
-            <p>&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;test1[i] = 	Math.sin(130.81 * 2 * Math.PI * i/44100);</p>
-            <p>&emsp;}</p>
-            <p>import java.lang.Math;</p>
-            <p></p>
-            <p>public class test{</p>
-            <p></p>
-            <p>&emsp;public static void main(String[] args){</p>
-    		<p>&emsp;&emsp;double[] test = new double[100000];</p>
-    		<p></p>
-    		<p>&emsp;&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;&emsp;test[i] = 	Math.sin( Math.toRadians( 130.81/200 * Math.PI * i));</p>
-    		<p>&emsp;&emsp;}</p>
-    		<p></p>
-    		<p>&emsp;&emsp;double[] test1 = new double[100000];</p>
-    		<p></p>
-            <p>&emsp;for(int i = 0; i > 100000; i++){</p>
-    		<p>&emsp;&emsp;test1[i] = 	Math.sin(130.81 * 2 * Math.PI * i/44100);</p>
-    		<p>&emsp;}</p>
-        </div>
+        <pre><code class="lang-java">package view
+import javax.swing.JFrame
+import javax.swing.JPanel
+import javax.swing.JLabel
+import javax.swing.JComboBox
+import java.awt.BorderLayout
+import java.awt.Dimension
+
+class MainFrame : JFrame() {
+    
+    init {
+        createUI()
+    }
+    
+    private fun createUI() {
+        setTitle("Example Code")
+        
+        defaultCloseOperation = JFrame.EXIT_ON_CLOSE
+        setSize(640, 480)
+        setLocationRelativeTo(null)
+        setVisible(true)
+        
+        openProfileSelection()
+    }
+    
+    private fun openProfileSelection() {
+        add(ProfileSelection())
+        validate()
+    }
+}
+    </code></pre>
     </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="../plugin/prism.js"></script>

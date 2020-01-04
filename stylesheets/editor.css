@@ -12,14 +12,6 @@ img {
     margin-left: 16;
 }
 
-.code {
-    color: white;
-    background-color: #303030;
-    padding-left: 12px;
-    width: 100%;
-    overflow-y: auto;
-}
-
 .line_numbers {
     flex: none;
     color: #6EC0FF;
@@ -63,4 +55,12 @@ img {
 
 .card-body {
     padding: 0;
+}
+
+pre {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 100%;
+    background-color: #303030 !important;
 }
