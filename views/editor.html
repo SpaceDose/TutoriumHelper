@@ -3,10 +3,12 @@
 <link rel="stylesheet" href="../plugin/prism.css">
 
 <script>
-$('#bottom').on('scroll', function () {
-    $('#top').scrollTop($(this).scrollTop());
-});
+function OnScroll(div) {
+    var pos = document.getElementById("line-numbers");
+    pos.scrollTop = div.scrollTop;
+}
 </script>
+
 <div class="card">
     <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
@@ -22,8 +24,8 @@ $('#bottom').on('scroll', function () {
         </ul>
     </div>
 
-    <div class="card-body d-flex" id="line-numbers">
-        <div class="d-flex flex-column align-items-end line_numbers">
+    <div class="card-body d-flex">
+        <div class="d-flex flex-column align-items-end line_numbers" id="line-numbers">
             <p>1</p>
             <p>2</p>
             <p>3</p>
@@ -36,8 +38,26 @@ $('#bottom').on('scroll', function () {
             <p>10</p>
             <p>11</p>
             <p>12</p>
+			<p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+            <p>21</p>
+            <p>22</p>
+            <p>23</p>
+            <p>24</p>
+			<p>25</p>
+            <p>26</p>
+            <p>27</p>
+            <p>28</p>
+            <p>29</p>
+            <p>30</p>
         </div>
-        <pre><code class="lang-java">package view
+        <pre  id="code"  onscroll="OnScroll(this)"><code class="lang-java">package view
 import javax.swing.JFrame
 import javax.swing.JPanel
 import javax.swing.JLabel
