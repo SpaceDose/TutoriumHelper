@@ -8,6 +8,7 @@ div {
 
 hr {
     border-color: #707070;
+    margin-bottom: 0;
 }
 
 p {
@@ -33,12 +34,11 @@ p {
 }
 
 .list-group {
-    padding: 0;
+    margin-bottom: 8px;
 }
 
 .list-group-item {
     background-color: transparent;
-    padding: 4px 0px 4px 16px;
     border: none;
     border-radius: 0 !important;
 }
@@ -49,9 +49,25 @@ a {
 a:hover {
     color: white;
     text-decoration: none;
-    background-color: #505050;
 }
 
 .collapse_indicator {
     padding-right: 16px;
+}
+
+.folder {
+    height: 48px;
+}
+
+.file {
+    padding: 0 0 0 80;
+    height: 32px;
+}
+
+.file:hover {
+    background-color: #505050;
+}
+
+.file > img {
+    height: 60%;
 }
