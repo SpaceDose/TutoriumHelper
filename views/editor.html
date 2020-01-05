@@ -5,13 +5,13 @@
 
 <script>
     function OnScroll(div) {
-       var pos = document.getElementById("line-numbers");
-       pos.scrollTop = div.scrollTop;
+        var pos = document.getElementById("line_numbers");
+        pos.scrollTop = div.scrollTop;
     }
 </script>
 
 <div class="d-flex editor">
-    <div class="d-flex flex-column align-items-end line_numbers" id="line-numbers">
+    <div class="d-flex flex-column align-items-end" id="line_numbers">
         <p>1</p>
         <p>2</p>
         <p>3</p>
@@ -105,6 +105,6 @@ class MainFrame : JFrame() {
 <script src="https://blissfuljs.com/bliss.shy.min.js"></script>
 <script src="../plugin/prism.js"></script>
 <script src="../plugin/prism-live.js"></script>
-<script src="src/prism-live-markup.js"></script>
-<script src="src/prism-live-css.js"></script>
-<script src="src/prism-live-javascript.js"></script>
+<script src="../plugin/prism-live-markup.js"></script>
+<script src="../plugin/prism-live-css.js"></script>
+<script src="../plugin/prism-live-javascript.js"></script>
