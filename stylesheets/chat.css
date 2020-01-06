@@ -65,7 +65,7 @@ html, body {
     padding: 0;
     background-color: var(--dark);
     height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .vl {
@@ -92,6 +92,7 @@ html, body {
 .chat {
     padding: 18px;
     height: 200px;
+    overflow-y: auto;
 }
 
 .chatMsg {
@@ -118,6 +119,7 @@ ts {
 }
 
 .bottomBar {
+    padding: 0px 12px;
     height: 48px;
     background-color: #464646;
 }
@@ -127,4 +129,23 @@ ts {
     margin-right: 12px;
     height: 32px;
     border-radius: 48px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: var(--scrollbarSize);
+    height: var(--scrollbarSize);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4A4A4A;
+	border-radius: var(--scrollbarSize);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--dark);
+}
+
+::-webkit-scrollbar-corner {
+	background-color: var(--dark)
 }
