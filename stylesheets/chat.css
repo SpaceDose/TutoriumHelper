@@ -6,6 +6,11 @@
     --scrollbarSize: 8px;
 }
 
+p {
+    color: white;
+    margin: 0;
+}
+
 html, body {
     background-color: var(--dark);
 }
@@ -14,6 +19,7 @@ html, body {
 .card {
     border: none;
     width: 100%;
+    height: 100%;
 }
 
 /* Tabs */
@@ -73,8 +79,6 @@ html, body {
     height: 30px; 
     padding-top: 2px;
     border-radius: 50%;  
-    margin-top: 8px;
-    margin-right: 12px;
 } 
 .btn-circle.btn-sm:hover {
     background-color: #505050;
@@ -83,4 +87,44 @@ html, body {
 .btn:focus {
     outline: none;
     box-shadow: none;
+}
+
+.chat {
+    padding: 18px;
+    height: 200px;
+}
+
+.chatMsg {
+    border-radius: 20px;
+    padding: 8px 18px;
+    margin-bottom: 12px;
+}
+
+ts {
+    font-size: smaller;
+    color: gray;
+    padding-left: 24px;
+    align-self: flex-end!important;
+}
+
+.userMsg {
+    background-color: rgb(70, 60, 90);
+    align-self: flex-end !important;
+}
+
+.partnerMsg {
+    background-color: rgb(60, 100, 80);
+    align-self: flex-start !important;
+}
+
+.bottomBar {
+    height: 48px;
+    background-color: #464646;
+}
+
+.form-control {
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 32px;
+    border-radius: 48px;
 }

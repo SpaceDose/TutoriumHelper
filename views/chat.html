@@ -23,8 +23,8 @@
                 <a class="nav-link" href="#">Cordul...</a>
             </li>
 
-            <div style="margin-right: 8px;" class="d-flex ml-auto">
-                <button type="button" class="btn btn-circle btn-sm d-flex justify-content-center" aria-pressed="true">
+            <div style="margin-right: 12px; margin-top: 8px;" class="d-flex ml-auto">
+                <button style="margin-right: 8px" type="button" class="btn btn-circle btn-sm d-flex justify-content-center" aria-pressed="true">
                     <img src="../drawables/call.svg"/>
                 </button> 
                 <button type="button" class="btn btn-circle btn-sm ml-auto d-flex justify-content-center" aria-pressed="true">
@@ -34,10 +34,34 @@
         </ul>
     </div>
 
-    <div class="card-body">
-    </div>
-
+    <div class="card-body d-flex flex-column">
+        <div class="container chat flex-grow-1 d-flex flex-column">
+            <div class="chatMsg partnerMsg d-flex align-items-center justify-content-between">
+                <p>this is a quite long testmessage</p> 
+                <ts>12:43am</ts>
+            </div>
+            <div class="chatMsg userMsg d-flex align-items-center justify-content-between">
+                <p>this is a quite long answer</p>
+                <ts>12:46am</ts>
+            </div>
+            <div class="chatMsg userMsg d-flex align-items-center justify-content-between">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <ts>12:46am</ts>
+            </div>
+        </div>
+        
+        <div class="container bottomBar d-flex align-items-center">
+            <button type="button" class="btn btn-circle btn-sm d-flex justify-content-center" aria-pressed="true">
+                <img src="../drawables/emoticon.svg"/>
+            </button>
+            <input class="form-control"/>
+            <button type="button" class="btn btn-circle btn-sm d-flex justify-content-center" aria-pressed="true">
+                <img src="../drawables/send.svg"/>
+            </button>
+        </div>
+    <div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
