@@ -1,41 +1,48 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="../stylesheets/global.css">
 <link rel="stylesheet" href="../stylesheets/package_explorer.css">
 
-<div class="container d-flex align-items-center">
-    <img src="../drawables/folder_shared.svg"/>
-    <p class="mb-0">Package Explorer</p>
-    <button type="button" class="btn btn-circle btn-sm ml-auto d-flex justify-content-center" aria-pressed="true">
-        <img src="../drawables/add.svg"/>
-    </button>
+<div style="height: 100%;" class="d-flex flex-column">
+    <div id="title" class="container d-flex align-items-center">
+        <img src="../drawables/folder_shared.svg"/>
+        <p class="mb-0">Package Explorer</p>
+        <button type="button" class="btn btn-circle btn-sm ml-auto d-flex justify-content-center" aria-pressed="true">
+            <img src="../drawables/add.svg"/>
+        </button>
+    </div>
+
+    <hr/>
+
+    <div class="files d-flex flex-column flex-grow-1">
+        <ul class="list-group">
+            <a href="#" class="list-group-item d-flex align-items-center folder">
+                <img class="collapse_indicator" src="../drawables/arrow_right.svg"/>
+                <img src="../drawables/folder_open.svg"/>
+                <p class="mb-0">Assignment 06</p>
+            </a>
+            <a href="#" class="list-group-item d-flex align-items-center file">
+                <img src="../drawables/file.svg"/>
+                <p class="mb-0">main.java</p>
+            </a>
+            <a href="#" class="list-group-item d-flex align-items-center file">
+                <img src="../drawables/file.svg"/>
+                <p class="mb-0">yikes.java</p>
+            </a>
+        </ul>
+        <ul class="list-group folder">
+            <a href="#" class="list-group-item align-items-center d-flex folder">
+                <img class="collapse_indicator" src="../drawables/arrow_right.svg"/>
+                <img src="../drawables/folder_open.svg"/>
+                <p class="mb-0">Assignment 07</p>
+          </a>
+        </ul>
+    </div>
+    <hr/>
+    <div id="title" class="d-flex mt-auto">
+      
+        test
+    </div>
 </div>
-
-<hr/>
-
-<div class="files">
-    <ul class="list-group">
-        <a href="#" class="list-group-item d-flex align-items-center folder">
-            <img class="collapse_indicator" src="../drawables/arrow_right.svg"/>
-            <img src="../drawables/folder_open.svg"/>
-            <p class="mb-0">Assignment 06</p>
-        </a>
-        <a href="#" class="list-group-item d-flex align-items-center file">
-            <img src="../drawables/file.svg"/>
-            <p class="mb-0">main.java</p>
-        </a>
-        <a href="#" class="list-group-item d-flex align-items-center file">
-            <img src="../drawables/file.svg"/>
-            <p class="mb-0">yikes.java</p>
-        </a>
-    </ul>
-    <ul class="list-group folder">
-        <a href="#" class="list-group-item align-items-center d-flex folder">
-            <img class="collapse_indicator" src="../drawables/arrow_right.svg"/>
-            <img src="../drawables/folder_open.svg"/>
-            <p class="mb-0">Assignment 07</p>
-      </a>
-    </ul>
-</div>
-
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
