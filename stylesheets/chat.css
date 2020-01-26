@@ -114,6 +114,7 @@ html, body {
     padding: 0px 12px;
     height: 48px;
     background-color: #464646;
+    flex-shrink: 0;
 }
 
 .form-control {
